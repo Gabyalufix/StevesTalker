@@ -35,11 +35,11 @@ textbox.onkeypress = function(k){
 		if( this.value.length > 0 ){
 			var lastChar = this.value[this.value.length - 1] 
 			console.log("TEXT=\""+this.value+"\"/k="+k.key+" lastChar="+lastChar)
-			console.log("lastCharSpace="+(lastChar == " "));
+			console.log("lastCharSpace="+(lastChar == " " || lastChar == "."));
 			console.log("kSpace="+(k.key == " "));
 			console.log("spokenIX="+(spokenIX));
 
-			if(lastChar == " " && (k.key == " ")){
+			if(lastChar == " " || lastChar == "."){
 				var words = this.value.split(" ")
 				console.log(words);
 				var speakme = "";
