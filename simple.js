@@ -31,7 +31,7 @@ textbox.onkeypress = function(k){
 	} else {
 		lastDelete=false;
 	}
-    if(k.key == " "){
+    if(k.key == " " || k.key == "."){
 		if( this.value.length > 0 ){
 			var lastChar = this.value[this.value.length - 1] 
 			console.log("TEXT=\""+this.value+"\"/k="+k.key+" lastChar="+lastChar)
